@@ -1,0 +1,26 @@
+[
+  {
+    "id": "apple",
+    "name": "苹果",
+    "image": "/assets/icons/apple.png",
+    "measureWord": "个"
+  },
+  {
+    "id": "watermelon",
+    "name": "西瓜",
+    "image": "/assets/icons/watermelon.png",
+    "measureWord": "块"
+  },
+  {
+    "id": "star",
+    "name": "星星",
+    "image": "/assets/icons/star.png",
+    "measureWord": "颗"
+  },
+  {
+    "id": "balloon",
+    "name": "热气球",
+    "image": "/assets/icons/balloon.png",
+    "measureWord": "个"
+  }
+]

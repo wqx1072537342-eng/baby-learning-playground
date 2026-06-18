@@ -1,0 +1,30 @@
+[
+  {
+    "id": "red",
+    "name": "红色",
+    "hex": "#f74343",
+    "image": "/assets/icons/color-red.png",
+    "speech": "红色像红红的苹果"
+  },
+  {
+    "id": "yellow",
+    "name": "黄色",
+    "hex": "#ffd42f",
+    "image": "/assets/icons/color-yellow.png",
+    "speech": "黄色像暖暖的太阳"
+  },
+  {
+    "id": "blue",
+    "name": "蓝色",
+    "hex": "#20a7f3",
+    "image": "/assets/icons/color-blue.png",
+    "speech": "蓝色像天空"
+  },
+  {
+    "id": "green",
+    "name": "绿色",
+    "hex": "#6ed52f",
+    "image": "/assets/icons/color-green.png",
+    "speech": "绿色像小草"
+  }
+]

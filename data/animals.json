@@ -1,0 +1,38 @@
+[
+  {
+    "id": "dog",
+    "name": "小狗",
+    "image": "/assets/characters/dog.png",
+    "measureWord": "只"
+  },
+  {
+    "id": "rabbit",
+    "name": "小兔",
+    "image": "/assets/characters/rabbit.png",
+    "measureWord": "只"
+  },
+  {
+    "id": "chick",
+    "name": "小鸡",
+    "image": "/assets/characters/chick.png",
+    "measureWord": "只"
+  },
+  {
+    "id": "panda",
+    "name": "熊猫",
+    "image": "/assets/characters/panda.png",
+    "measureWord": "只"
+  },
+  {
+    "id": "lion",
+    "name": "狮子",
+    "image": "/assets/characters/lion.png",
+    "measureWord": "只"
+  },
+  {
+    "id": "elephant",
+    "name": "小象",
+    "image": "/assets/characters/elephant.png",
+    "measureWord": "只"
+  }
+]
