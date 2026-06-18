@@ -127,3 +127,9 @@ export const numberRanges = [
     color: "linear-gradient(180deg, #ffbf56, #ff8b22)"
   }
 ];
+// lib/content.ts
+
+// 🔥 新增这个函数
+export function getAllNumberRanges(): string[] {
+  return numberRanges.map((item) => item.range);
+}
