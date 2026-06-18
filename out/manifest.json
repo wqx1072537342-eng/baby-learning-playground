@@ -1,0 +1,11 @@
+{
+  "name": "宝宝启蒙乐园",
+  "short_name": "启蒙乐园",
+  "description": "适合 1-3 岁宝宝的数数启蒙 H5 小游戏",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fff4c8",
+  "theme_color": "#ff6ea7",
+  "orientation": "portrait",
+  "icons": []
+}

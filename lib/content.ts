@@ -33,12 +33,14 @@ function getById<T extends { id: string }>(items: T[], id: string) {
 function makeOptions(answer: number) {
   const base = new Set<number>([answer]);
   const candidates = [answer - 1, answer + 1, answer - 2, answer + 2, 1, 2, 3, 4, 5];
+
   for (const candidate of candidates) {
     if (candidate >= 1 && candidate <= 5) {
       base.add(candidate);
     }
     if (base.size === 4) break;
   }
+
   return [...base].sort((a, b) => a - b);
 }
 
@@ -49,6 +51,7 @@ function makeCountQuestions(
   return sourceQuestions.map((question) => {
     const item = getById(sourceItems, question.itemId);
     const countText = countTexts[question.count] ?? String(question.count);
+
     return {
       id: question.id,
       item,
@@ -62,6 +65,7 @@ function makeCountQuestions(
 
 export function getNumbersByRange(range: string): NumberItem[] {
   const list = numbers as NumberItem[];
+
   if (range === "0-10") {
     return list.filter((item) => item.value >= 0 && item.value <= 10);
   }
@@ -71,6 +75,7 @@ export function getNumbersByRange(range: string): NumberItem[] {
   if (range === "50-100") {
     return list.filter((item) => item.value >= 50 && item.value <= 100);
   }
+
   return [];
 }
 
@@ -90,10 +95,12 @@ export function getFruitQuestions() {
 
 export function getColorQuestions(): ColorPlayQuestion[] {
   const colorItems = colors as ColorItem[];
+
   return (questions as { colors: ColorQuestion[] }).colors.map((question, index) => {
     const answer = getById(colorItems, question.colorId);
     const rotated = [...colorItems.slice(index), ...colorItems.slice(0, index)];
     const options = [answer, ...rotated.filter((item) => item.id !== answer.id)].slice(0, 4);
+
     return {
       id: question.id,
       answer,
@@ -127,9 +134,7 @@ export const numberRanges = [
     color: "linear-gradient(180deg, #ffbf56, #ff8b22)"
   }
 ];
-// lib/content.ts
 
-// 🔥 新增这个函数
 export function getAllNumberRanges(): string[] {
   return numberRanges.map((item) => item.range);
 }

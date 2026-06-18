@@ -1,22 +1,15 @@
 import { notFound } from "next/navigation";
 import { NumberCard } from "@/components/NumberCard";
 import { PageHeader } from "@/components/PageHeader";
-import { getNumbersByRange, getAllNumberRanges } from "@/lib/content"; // ✅ 导入新函数
+import { getAllNumberRanges, getNumbersByRange } from "@/lib/content";
 
-export async function generateStaticParams() {
-  const ranges = getAllNumberRanges(); // 获取 ["0-10", "11-50", "50-100"]
-  return ranges.map((range) => ({
-    range: range, // 参数名与文件夹名 [range] 一致
-  }));
+export function generateStaticParams() {
+  return getAllNumberRanges().map((range) => ({ range }));
 }
 
 type NumberRangePageProps = {
   params: Promise<{ range: string }>;
 };
-
-
-
-
 
 export default async function NumberRangePage({ params }: NumberRangePageProps) {
   const { range } = await params;
